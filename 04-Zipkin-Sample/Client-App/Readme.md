@@ -53,11 +53,11 @@ curl http://127.0.0.1:8081
 etkileşimi görebilirsiniz.
 
 Sorgulama sonucunda bir isteğin kırılımlı detayı görüntülenmektedir.
-![Dashboard](Zipkin-1.png)
+![Dashboard](zipkin-1.png)
 
 "span" tıklandığında işlem adımı detayı görüntülenmektedir.
 
-![Dashboard](Zipkin-2.png)
+![Dashboard](zipkin-2.png)
 
 
 ## Authors
