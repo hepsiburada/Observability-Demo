@@ -1,3 +1,9 @@
+### P8S, Grafana, Zipkin stack sertup
+```
+cd monitoring
+docker-compose up -d
+```
+
 ### Metrics & Observability
 
 
