@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="App.Metrics.AspNetCore.Health">
+      <Version>2.1.0-alpha-0071</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.Health">
+      <Version>2.1.0-alpha-0118</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.Health.Checks.Http">
+      <Version>2.1.0-alpha-0118</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.Health.Checks.Network">
+      <Version>2.1.0-alpha-0118</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.Health.Checks.Process">
+      <Version>2.1.0-alpha-0118</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.Health.Checks.Sql">
+      <Version>2.1.0-alpha-0118</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.Health.Reporting.Slack">
+      <Version>2.1.0-alpha-0118</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>

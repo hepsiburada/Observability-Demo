@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>App.Metrics.Formatters.Prometheus</name>
+    </assembly>
+    <members>
+        <member name="M:App.Metrics.MetricsPrometheusFormatterBuilder.AsPrometheusPlainText(App.Metrics.IMetricsOutputFormattingBuilder,App.Metrics.Formatters.Prometheus.MetricsPrometheusOptions)">
+            <summary>
+                Add the <see cref="T:App.Metrics.MetricsPrometheusFormatterBuilder" /> allowing metrics to optionally be formatted in Prometheus plain text format
+            </summary>
+            <param name="metricFormattingBuilder">s
+                The <see cref="T:App.Metrics.IMetricsOutputFormattingBuilder" /> used to configure Prometheus formatting
+                options.
+            </param>
+            <param name="options">The Prometheus formatting options to use.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.MetricsPrometheusFormatterBuilder.AsPrometheusPlainText(App.Metrics.IMetricsOutputFormattingBuilder,System.Action{App.Metrics.Formatters.Prometheus.MetricsPrometheusOptions})">
+            <summary>
+                Add the <see cref="T:App.Metrics.MetricsPrometheusFormatterBuilder" /> allowing metrics to optionally be formatted in Prometheus plain text format
+            </summary>
+            <param name="metricFormattingBuilder">s
+                The <see cref="T:App.Metrics.IMetricsOutputFormattingBuilder" /> used to configure Prometheus formatting
+                options.
+            </param>
+            <param name="setupAction">The Prometheus formatting options to use.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.MetricsPrometheusFormatterBuilder.AsPrometheusPlainText(App.Metrics.IMetricsOutputFormattingBuilder)">
+            <summary>
+                Add the <see cref="T:App.Metrics.MetricsPrometheusFormatterBuilder" /> allowing metrics to optionally be formatted in Prometheus plain text format
+            </summary>
+            <param name="metricFormattingBuilder">s
+                The <see cref="T:App.Metrics.IMetricsOutputFormattingBuilder" /> used to configure Prometheus formatting
+                options.
+            </param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.MetricsPrometheusFormatterBuilder.AsPrometheusProtobuf(App.Metrics.IMetricsOutputFormattingBuilder,App.Metrics.Formatters.Prometheus.MetricsPrometheusOptions)">
+            <summary>
+                Add the <see cref="T:App.Metrics.MetricsPrometheusFormatterBuilder" /> allowing metrics to optionally be formatted in Prometheus protobuf format
+            </summary>
+            <param name="metricFormattingBuilder">s
+                The <see cref="T:App.Metrics.IMetricsOutputFormattingBuilder" /> used to configure Prometheus formatting
+                options.
+            </param>
+            <param name="options">The Prometheus formatting options to use.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.MetricsPrometheusFormatterBuilder.AsPrometheusProtobuf(App.Metrics.IMetricsOutputFormattingBuilder,System.Action{App.Metrics.Formatters.Prometheus.MetricsPrometheusOptions})">
+            <summary>
+                Add the <see cref="T:App.Metrics.MetricsPrometheusFormatterBuilder" /> allowing metrics to optionally be formatted in Prometheus protobuf format
+            </summary>
+            <param name="metricFormattingBuilder">s
+                The <see cref="T:App.Metrics.IMetricsOutputFormattingBuilder" /> used to configure Prometheus formatting
+                options.
+            </param>
+            <param name="setupAction">The Prometheus formatting options to use.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.MetricsPrometheusFormatterBuilder.AsPrometheusProtobuf(App.Metrics.IMetricsOutputFormattingBuilder)">
+            <summary>
+                Add the <see cref="T:App.Metrics.MetricsPrometheusFormatterBuilder" /> allowing metrics to optionally be formatted in Prometheus protobuf format
+            </summary>
+            <param name="metricFormattingBuilder">s
+                The <see cref="T:App.Metrics.IMetricsOutputFormattingBuilder" /> used to configure Prometheus formatting
+                options.
+            </param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="T:App.Metrics.Formatters.Prometheus.MetricsPrometheusOptions">
+            <summary>
+                Provides programmatic configuration for Prometheus format in the App Metrics framework.
+            </summary>
+        </member>
+        <member name="P:App.Metrics.Formatters.Prometheus.MetricsPrometheusProtobufOutputFormatter.MediaType">
+            <inheritdoc/>
+        </member>
+        <member name="P:App.Metrics.Formatters.Prometheus.MetricsPrometheusProtobufOutputFormatter.MetricFields">
+            <inheritdoc/>
+        </member>
+        <member name="M:App.Metrics.Formatters.Prometheus.MetricsPrometheusProtobufOutputFormatter.WriteAsync(System.IO.Stream,App.Metrics.MetricsDataValueSource,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="P:App.Metrics.Formatters.Prometheus.MetricsPrometheusTextOutputFormatter.MediaType">
+            <inheritdoc/>
+        </member>
+        <member name="P:App.Metrics.Formatters.Prometheus.MetricsPrometheusTextOutputFormatter.MetricFields">
+            <inheritdoc/>
+        </member>
+        <member name="M:App.Metrics.Formatters.Prometheus.MetricsPrometheusTextOutputFormatter.WriteAsync(System.IO.Stream,App.Metrics.MetricsDataValueSource,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:App.Metrics.Formatters.Prometheus.NewLineFormat">
+            <summary>
+            Line endings format
+            </summary>
+        </member>
+        <member name="F:App.Metrics.Formatters.Prometheus.NewLineFormat.Default">
+            <summary>
+            Use Unix style new line character by default
+            </summary>
+        </member>
+        <member name="F:App.Metrics.Formatters.Prometheus.NewLineFormat.Auto">
+            <summary>
+            Use Environement.NewLine as new line character
+            </summary>
+        </member>
+        <member name="F:App.Metrics.Formatters.Prometheus.NewLineFormat.Windows">
+            <summary>
+            Use '\r\n' as new line character
+            </summary>
+        </member>
+        <member name="F:App.Metrics.Formatters.Prometheus.NewLineFormat.Unix">
+            <summary>
+            Use '\r' as new line character
+            </summary>
+        </member>
+    </members>
+</doc>

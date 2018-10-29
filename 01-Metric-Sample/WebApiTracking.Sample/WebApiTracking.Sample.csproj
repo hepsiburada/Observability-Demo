@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="App.Metrics.AspNetCore">
+      <Version>3.0.0-alpha-0098</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.AspNetCore.Endpoints">
+      <Version>3.0.0-alpha-0098</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.AspNetCore.Tracking">
+      <Version>3.0.0-alpha-0098</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.Extensions.Hosting">
+      <Version>3.0.0-alpha-0072</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.Reporting.Http">
+      <Version>3.0.0-alpha-0081</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="App.Metrics.AspNetCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812">
+      <HintPath>..\..\..\..\.nuget\packages\app.metrics.aspnetcore\3.0.0-alpha-0098\lib\netstandard2.0\App.Metrics.AspNetCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

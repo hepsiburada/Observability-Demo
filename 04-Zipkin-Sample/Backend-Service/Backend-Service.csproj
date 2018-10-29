@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="zipkin4net">
+      <Version>1.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="zipkin4net.middleware.aspnetcore">
+      <Version>1.2.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zipkin.Library\Zipkin.Library.csproj" />
+  </ItemGroup>
+</Project>

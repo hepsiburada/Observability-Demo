@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="zipkin4net">
+      <Version>1.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="zipkin4net.middleware.aspnetcore">
+      <Version>1.2.3</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>

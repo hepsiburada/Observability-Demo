@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="App.Metrics">
+      <Version>3.0.0-alpha-0780</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.AspNetCore.Mvc">
+      <Version>3.0.0-alpha-0098</Version>
+    </PackageReference>
+    <PackageReference Include="App.Metrics.AspNetCore.Tracking">
+      <Version>3.0.0-alpha-0098</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="protobuf-net">
+      <Version>2.1.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\monitoring\docker-compose.yml" />
+    <Content Include="..\..\monitoring\grafana\config.monitoring" />
+    <Content Include="..\..\monitoring\grafana\provisioning\dashboards\App Metrics - Web Monitoring - Prometheus-1540325786221.json" />
+    <Content Include="..\..\monitoring\grafana\provisioning\dashboards\dashboard.yml" />
+    <Content Include="..\..\monitoring\grafana\provisioning\dashboards\Docker Prometheus Monitoring-1533038455876.json" />
+    <Content Include="..\..\monitoring\grafana\provisioning\datasources\datasource.yml" />
+    <Content Include="..\..\monitoring\prometheus\prometheus.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="App.Metrics.Formatters.Prometheus, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0d5193a913d1b812">
+      <HintPath>..\..\lib\App.Metrics.Formatters.Prometheus\App.Metrics.Formatters.Prometheus.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
